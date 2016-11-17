@@ -26,15 +26,10 @@ public class PlaceDetailModel {
         this.mAppSharePreference = mAppSharePreference;
     }
 
-    public void requestMapDetail(String placeId, final MVP.Model.OnLoad<Place> onLoad)
+    public void requestMapDetail(final String placeId, final MVP.Model.OnLoad<Place> onLoad)
     {
         compositeSubscription = new CompositeSubscription();
-        compositeSubscription.add(mLocationService.getPlaceById(placeId).flatMap(new Func1<PlaceBuffer, Observable<Place>>() {
-            @Override
-            public Observable<Place> call(PlaceBuffer places) {
-                return Observable.just(places.get(0));
-            }
-        }).subscribe(new Subscriber<Place>() {
+        compositeSubscription.add(mLocationService.getPlaceById(placeId).subscribe(new Subscriber<PlaceBuffer>() {
             @Override
             public void onCompleted() {
 
@@ -46,8 +41,10 @@ public class PlaceDetailModel {
             }
 
             @Override
-            public void onNext(Place place) {
-                onLoad.onSuccess(place);
+            public void onNext(PlaceBuffer places) {
+                if(places.getCount()>0)
+                    onLoad.onSuccess(places.get(0));
+                places.release();
             }
         }));
     }

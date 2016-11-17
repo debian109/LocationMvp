@@ -40,14 +40,20 @@ public class PlacePresenter extends AbstractPresenter<PlaceView> implements MVP.
 
     @Override
     public void onSuccess(List<PlaceItem> data) {
-        if(data.size()>0)
+        try {
+            if(data.size()>0)
+            {
+                getView().populate(data);
+                getView().showContent();
+            }else
+            {
+                getView().showEmpty();
+            }
+        }catch (Exception e)
         {
-            getView().populate(data);
-            getView().showContent();
-        }else
-        {
-            getView().showEmpty();
+
         }
+
 
     }
 
