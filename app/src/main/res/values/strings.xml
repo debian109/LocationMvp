@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Places</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="geo_key">AIzaSyCgFmIUHfP8eRtPWGhj06wdet7COVMhT3o</string>
+
+    <string name="nav_atm">Banks/ATM</string>
+    <string name="nav_bar">Bars</string>
+    <string name="nav_coffee">Coffee Shops</string>
+    <string name="nav_gas">Gas Stations</string>
+    <string name="nav_hospital">Hospital</string>
+    <string name="nav_hotel">Hotels</string>
+    <string name="nav_movie_theater">Movie Theaters</string>
+    <string name="nav_movie">Movies</string>
+    <string name="nav_parking">Parking</string>
+    <string name="nav_pharmacies">Pharmacies</string>
+    <string name="nav_pubs">Pubs</string>
+    <string name="nav_restaurants">Restaurants</string>
+    <string name="nav_supermarket">Supermarkets</string>
+    <string name="nav_taxi">Taxis</string>
+    <string name="nav_theater">Theaters</string>
+    <string name="nav_weather">Weather</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item>Banks/ATM</item>
+        <item>Bars</item>
+        <item>Coffee Shops</item>
+        <item>Gas Stations</item>
+        <item>Hospital</item>
+        <item>Hotels</item>
+        <item>Movie Theaters</item>
+        <item>Movie</item>
+        <item>Parking</item>
+        <item>Pharmacies</item>
+        <item>Pubs</item>
+        <item>Restaurants</item>
+        <item>Supermarkets</item>
+        <item>Taxis</item>
+        <item>Theaters</item>
+        <item>Weather</item>
+    </string-array>
+
+    <string-array name="nav_item_activity_key">
+        <item>atm</item>
+        <item>bar</item>
+        <item>cafe</item>
+        <item>gas_station</item>
+        <item>hospital</item>
+        <item>hotel</item>
+        <item>movie_theater</item>
+        <item>movie</item>
+        <item>parking</item>
+        <item>pharmacy</item>
+        <item>night_club</item>
+        <item>restaurant</item>
+        <item>supermarket</item>
+        <item>taxi_stand</item>
+        <item>theater</item>
+        <item>weather</item>
+
+    </string-array>
+
+
+</resources>

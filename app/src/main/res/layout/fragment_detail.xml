@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_place_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.sutrix.places.view.PlaceDetailActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map_detail"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/mid_guideline" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mid_guideline"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="254dp"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintGuide_percent="0.4970646" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/ic_call"
+        android:id="@+id/phone_button"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:background="#efafef"
+        android:textColor="#005eff"
+        android:paddingLeft="30dp"
+        android:gravity="left|center_vertical"
+        android:text="CONTACT"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:id="@+id/textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mid_guideline" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/ic_account_circle"
+        android:id="@+id/adress_button"
+        app:layout_constraintLeft_toLeftOf="@+id/phone_button"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/phone_button" />
+
+    <TextView
+        android:text=""
+        android:layout_marginEnd="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_textview"
+        app:layout_constraintLeft_toRightOf="@+id/phone_button"
+        app:layout_constraintTop_toTopOf="@+id/phone_button"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_button"
+        android:layout_marginStart="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/address_textview"
+        app:layout_constraintTop_toTopOf="@+id/adress_button"
+        app:layout_constraintBottom_toBottomOf="@+id/adress_button"
+        app:layout_constraintLeft_toRightOf="@+id/adress_button"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:id="@+id/rating"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/rating_textview" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/ic_public"
+        android:id="@+id/website_button"
+        app:layout_constraintLeft_toLeftOf="@+id/adress_button"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/adress_button" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/website_textview"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/website_button"
+        app:layout_constraintTop_toTopOf="@+id/website_button"
+        app:layout_constraintBottom_toBottomOf="@+id/website_button"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:text="Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating_textview"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/website_textview"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

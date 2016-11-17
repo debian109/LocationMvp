@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_atm"
+            android:icon="@drawable/pi_bank"
+            android:title="@string/nav_atm" />
+        <item
+            android:id="@+id/nav_bar"
+            android:icon="@drawable/pi_bar"
+            android:title="@string/nav_bar" />
+        <item
+            android:id="@+id/nav_coffee"
+            android:icon="@drawable/pi_coffee"
+            android:title="@string/nav_coffee" />
+        <item
+            android:id="@+id/nav_gas"
+            android:icon="@drawable/pi_gasstation"
+            android:title="@string/nav_gas" />
+        <item
+            android:id="@+id/nav_hospital"
+            android:icon="@drawable/pi_hospital"
+            android:title="@string/nav_hospital" />
+        <item
+            android:id="@+id/nav_hotel"
+            android:icon="@drawable/pi_hotel"
+            android:title="@string/nav_hotel" />
+        <item
+            android:id="@+id/nav_movie_theater"
+            android:icon="@drawable/pi_movie"
+            android:title="@string/nav_movie_theater" />
+        <item
+            android:id="@+id/nav_movie"
+            android:icon="@drawable/pi_favorites"
+            android:title="@string/nav_movie" />
+        <item
+            android:id="@+id/nav_parking"
+            android:icon="@drawable/pi_parking"
+            android:title="@string/nav_parking" />
+        <item
+            android:id="@+id/nav_pharmacy"
+            android:icon="@drawable/pi_pharmacy"
+            android:title="@string/nav_pharmacies" />
+        <item
+            android:id="@+id/nav_pub"
+            android:icon="@drawable/pi_pub"
+            android:title="@string/nav_pubs" />
+        <item
+            android:id="@+id/nav_res"
+            android:icon="@drawable/pi_restaurant"
+            android:title="@string/nav_restaurants" />
+        <item
+            android:id="@+id/nav_supermarket"
+            android:icon="@drawable/pi_supermarket"
+            android:title="@string/nav_supermarket" />
+        <item
+            android:id="@+id/nav_taxi"
+            android:icon="@drawable/pi_taxi"
+            android:title="@string/nav_taxi" />
+        <item
+            android:id="@+id/nav_theater"
+            android:icon="@drawable/pi_theater"
+            android:title="@string/nav_theater" />
+
+    </group>
+
+</menu>
