@@ -1,4 +1,4 @@
-package com.other.place.ui;
+package com.other.place.ui.fragment;
 
 import android.support.v4.app.Fragment;
 
@@ -7,5 +7,5 @@ import android.support.v4.app.Fragment;
  */
 
 public abstract class BaseFragment extends Fragment {
-    protected abstract void onRequest();
+    public abstract void onRequest();
 }

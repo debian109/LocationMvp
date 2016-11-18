@@ -1,4 +1,4 @@
-package com.other.place.ui;
+package com.other.place.ui.adapter;
 
 import android.location.Location;
 import android.support.v7.widget.RecyclerView;

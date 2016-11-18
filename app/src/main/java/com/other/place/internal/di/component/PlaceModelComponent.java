@@ -3,8 +3,8 @@ package com.other.place.internal.di.component;
 import com.other.place.internal.di.module.PlaceModelModule;
 import com.other.place.internal.di.scope.PerPlaceModel;
 import com.other.place.internal.mvp.presenter.PlacePresenter;
-import com.other.place.ui.ContentFragment;
-import com.other.place.ui.MapFragment;
+import com.other.place.ui.fragment.ContentFragment;
+import com.other.place.ui.fragment.MapFragment;
 
 import dagger.Component;
 

@@ -1,4 +1,4 @@
-package com.other.place.ui;
+package com.other.place.ui.fragment;
 
 
 import android.location.Location;
@@ -26,6 +26,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.other.place.PlaceApp;
 import com.other.place.R;
 import com.other.place.internal.di.component.DaggerPlaceModelDetailComponent;
 import com.other.place.internal.mvp.presenter.PlaceDetailPresenter;

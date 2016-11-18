@@ -4,7 +4,7 @@ import com.other.place.internal.di.module.PlaceModelDetailModule;
 import com.other.place.internal.di.scope.PerPlaceDetailModel;
 import com.other.place.internal.mvp.presenter.PlaceDetailPresenter;
 import com.other.place.location.LocationService;
-import com.other.place.ui.DetailsFragment;
+import com.other.place.ui.fragment.DetailsFragment;
 
 import dagger.Component;
 

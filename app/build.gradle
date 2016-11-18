@@ -49,4 +49,8 @@ dependencies {
     compile 'io.reactivex:rxjava:1.1.6'
     compile 'com.github.pwittchen:reactivenetwork:0.6.0'
     compile 'com.afollestad.material-dialogs:commons:0.9.1.0'
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
 }

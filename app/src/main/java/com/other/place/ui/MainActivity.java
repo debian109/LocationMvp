@@ -21,11 +21,15 @@ import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.github.pwittchen.reactivenetwork.library.ReactiveNetwork;
 import com.google.android.gms.location.LocationSettingsStates;
+import com.other.place.PlaceApp;
 import com.other.place.R;
 import com.other.place.internal.di.component.DaggerActivityComponent;
 import com.other.place.internal.di.module.LocationServiceModule;
 import com.other.place.location.LocationService;
 import com.other.place.preference.AppSharePreference;
+import com.other.place.ui.fragment.BaseFragment;
+import com.other.place.ui.fragment.ContentFragment;
+import com.other.place.ui.fragment.MapFragment;
 import com.tbruyelle.rxpermissions.RxPermissions;
 
 import javax.inject.Inject;

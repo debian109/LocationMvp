@@ -1,4 +1,4 @@
-package com.other.place.ui;
+package com.other.place.ui.fragment;
 
 
 import android.location.Location;
@@ -17,12 +17,14 @@ import android.widget.AdapterView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.other.place.PlaceApp;
 import com.other.place.R;
 import com.other.place.internal.di.component.DaggerPlaceModelComponent;
 import com.other.place.internal.mvp.presenter.PlacePresenter;
 import com.other.place.internal.mvp.view.PlaceView;
 import com.other.place.model.PlaceItem;
 import com.other.place.preference.AppSharePreference;
+import com.other.place.ui.adapter.PlaceAdapter;
 
 import java.util.List;
 
@@ -141,7 +143,7 @@ public class ContentFragment extends BaseFragment implements PlaceView, AdapterV
     }
 
     @Override
-    protected void onRequest() {
+    public void onRequest() {
         presenter.requestApi();
     }
 }
